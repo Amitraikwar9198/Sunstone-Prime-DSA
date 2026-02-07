@@ -10,7 +10,6 @@ int main(){
         for(int j=0;j<=i;j++){
             cout<<val<<" ";
             val=val*(i-j)/(j+1);
-           
             
         }
         cout<<endl;
