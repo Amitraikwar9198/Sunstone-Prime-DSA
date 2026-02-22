@@ -5,7 +5,10 @@ int add(int a,int b){
     return sum;
 }
 int main(){
-    int result = add(5 , 3);
+    int a,b;
+    cout<<"Enter any two numbers : ";
+    cin>>a>>b;
+    int result = add(a , b);
     cout<<"sum : "<<result;
     return 0;
 }
