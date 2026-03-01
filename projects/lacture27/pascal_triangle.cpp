@@ -1,20 +1,32 @@
-#include<iostream>
+#include <iostream>
+#include <vector>
 using namespace std;
-int main(){
-    int num;
-    cin>>num;
-    int n=1;
-    for(int i=1; i<=num; i++){
-        for(int j=1;j<=num-i;j++){
-            cout<<" ";
 
-        }
-        for(int j=0; j<=i; j++){
-            cout<<n<<" ";
-            n=n*(i-j)/(j*1);
+int main() {
+    int n = 5;
 
+    vector<vector<int>> v;
+
+    for(int i = 0; i < n; i++) {
+        vector<int> row;
+
+        for(int j = 0; j <= i; j++) {
+            if(j == 0 || j == i)
+                row.push_back(1);
+            else
+                row.push_back(v[i-1][j-1] + v[i-1][j]);
         }
-        cout<<endl;
+
+        v.push_back(row);
     }
+
+    // print
+    for(int i = 0; i < v.size(); i++) {
+        for(int j = 0; j < v[i].size(); j++) {
+            cout << v[i][j] << " ";
+        }
+        cout << endl;
+    }
+
     return 0;
 }
