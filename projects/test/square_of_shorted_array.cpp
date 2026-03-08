@@ -1,5 +1,5 @@
-#include<iostream>
-#include<algorithm>
+#include <iostream>
+#include <algorithm>
 using namespace std;
 
 int main()
@@ -9,19 +9,19 @@ int main()
 
     int a[n];
 
-    for(int i=0;i<n;i++)
+    for (int i = 0; i < n; i++)
     {
         cin >> a[i];
     }
 
-    for(int i=0;i<n;i++)
+    for (int i = 0; i < n; i++)
     {
         a[i] = a[i] * a[i];
     }
 
-    sort(a, a+n);
+    sort(a, a + n);
 
-    for(int i=0;i<n;i++)
+    for (int i = 0; i < n; i++)
     {
         cout << a[i] << " ";
     }
