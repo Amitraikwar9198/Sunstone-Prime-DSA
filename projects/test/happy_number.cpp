@@ -2,8 +2,8 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
+    int n=10;
+   
 
     while (n != 1 && n != 4) {
         int sum = 0;
