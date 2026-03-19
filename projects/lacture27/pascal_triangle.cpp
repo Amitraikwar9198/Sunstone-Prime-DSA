@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    int n = 5;
+    int n = 2;
 
     vector<vector<int>> v;
 
