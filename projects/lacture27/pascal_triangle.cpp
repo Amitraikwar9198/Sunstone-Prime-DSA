@@ -3,9 +3,9 @@
 using namespace std;
 
 int main() {
-    int n = 2;
+    int n = 7;
 
-    vector<vector<int>> v;
+    vector<vector<int>>v;
 
     for(int i = 0; i < n; i++) {
         vector<int> row;
