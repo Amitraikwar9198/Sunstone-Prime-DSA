@@ -38,7 +38,7 @@ public:
 int main() {
     Solution obj;
 
-    vector<int> nums = {3, 1, 4, 1, 5};
+    vector<int> nums = {4, 1, 8, 1, 9};
     int k = 2;
 
     int result = obj.findPairs(nums, k);
