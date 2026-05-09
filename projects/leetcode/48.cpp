@@ -26,8 +26,7 @@ void rotate(vector<vector<int>>& matrix) {
 }
 
 int main() {
-    int n;
-    cin >> n;
+    int n=5;
 
     vector<vector<int>> matrix(n, vector<int>(n));
 
